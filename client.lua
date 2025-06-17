@@ -23,7 +23,7 @@ local function Progress(title, ResultMsg, DurationPerOne, func)
 end
 
 RegisterCommand('testcard', function()
-    Carding("Test Connection", "Completed", 250, function()
+    Progress("Test Connection", "Completed", 250, function()
         print('succesfully ended')
     end)
 end)
